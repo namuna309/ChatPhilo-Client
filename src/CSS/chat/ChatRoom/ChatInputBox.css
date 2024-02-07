@@ -1,0 +1,45 @@
+.chat-textarea-container{
+    width: 100%;
+    height: auto;
+    padding: 0 25%;
+}
+
+.chat-textarea-box {
+    width: 100%;
+    background-color: #00000045;
+ 
+    padding: 0.1rem 0 0 0;
+}
+
+.msgInput {
+    width: 100%;
+    padding: 5px 10px;
+    
+}
+
+.chat-enter {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width:899px) {
+    /* 모바일 가로, 타블렛 세로 */
+    .chat-textarea-container{
+        width: 100%;
+        height: auto;
+        padding: 0 5%;
+    }
+  }
+  
+  @media screen and (max-width:599px) {
+    /* 모바일 세로 */
+    .chat-textarea-container{
+        width: 100%;
+        height: auto;
+        padding: 0 5%;
+    }
+  }
