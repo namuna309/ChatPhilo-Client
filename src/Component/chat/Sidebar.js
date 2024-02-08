@@ -8,6 +8,9 @@ import React from 'react';
 import CounselorList from './Sidebar/CounselorList';
 import AccountControls from './Sidebar/AccountControls';
 
+// Img
+import toss from '../../Img/support/toss.png'
+
 const Sidebar = ({ isMobile, isSidebarOpen, handleSidebarCloseBtn, counselors, activeButtons, onCounselorClick, handleThreadDelete, username, logoutDsp, onLogoutClick, onAccountClick }) => {
     return (
         <>
@@ -20,6 +23,14 @@ const Sidebar = ({ isMobile, isSidebarOpen, handleSidebarCloseBtn, counselors, a
                         onCounselorClick={onCounselorClick}
                         handleThreadDelete={handleThreadDelete}
                     />
+                    <div className='sidebar-support-container'>
+                        <div className="sidebar-support-btn sidebar-buy-me-coffee">
+                            <a href="https://www.buymeacoffee.com/chatPhilo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" /></a>
+                        </div>
+                        <div className="sidebar-support-btn sidebar-toss">
+                            <a href="https://toss.me/chatphilo" target="_blank"><img src={toss} alt="Toss 익명 후원" /></a>
+                        </div>
+                    </div>
                     <AccountControls
                         username={username}
                         logoutDsp={logoutDsp}

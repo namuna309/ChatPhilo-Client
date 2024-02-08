@@ -10,10 +10,47 @@
     position: relative;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
  .sidebar-close-btn {
     display: none;
  }
+
+ .sidebar-support-container {
+    width: 100%;
+    padding: 0.125rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+ }
+
+ .sidebar-support-btn {
+    width: 100%;
+    display: flex;
+ }
+
+ .sidebar-support-btn a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .sidebar-buy-me-coffee img {
+    padding: 0.3125rem;
+    width: 85% !important;
+    height: auto !important;
+}
+
+
+
+.sidebar-toss img {
+    padding: 0.3125rem;
+    width: 85% !important;
+    height: auto !important;
+}
+
 
 
 @media screen and (max-width:899px) {
