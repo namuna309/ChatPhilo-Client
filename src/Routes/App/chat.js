@@ -41,7 +41,7 @@ function Chat() {
     const { mutate, isPending } = useMutation({
         mutationFn: () => postMessage(threadId, curCounselor),
         onSuccess: (reply) => setDialog(prev => [...prev, reply]),
-        onError: (error) => console.error('Error posting message:', error),
+        onError: (error) => alert('메세지 응답에 문제가 발생하였습니다. 잠시후 다시 시도해주세요.'),
     });
 
     // 로그인 상태 확인에 대한 useEffect
@@ -121,7 +121,6 @@ function Chat() {
     // 메시지 전송 핸들러 (엔터 키 누를 때)
     const handleMessageSend = (e) => {
         if (e.key === 'Enter' || document.querySelector('.chat-textarea-box button').contains(e.target)) {
-            console.log('센드')
             sendMessage();
         }
     };

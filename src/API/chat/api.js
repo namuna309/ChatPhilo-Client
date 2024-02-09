@@ -47,7 +47,7 @@ export async function createMessage(threadId, message) {
         body: JSON.stringify({ content: message })
     });
     if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        alert('메세지 생성 및 발송 과정에서 문제가 발생하였습니다. 잠시후 다시 이용해주세요.')
     }
     return response.json();
 }
