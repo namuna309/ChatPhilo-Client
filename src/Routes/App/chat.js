@@ -120,7 +120,8 @@ function Chat() {
 
     // 메시지 전송 핸들러 (엔터 키 누를 때)
     const handleMessageSend = (e) => {
-        if (e.key === 'Enter' || document.querySelector('.chat-textarea-box').contains(e.target)) {
+        if (e.key === 'Enter' || document.querySelector('.chat-textarea-box button').contains(e.target)) {
+            console.log('센드')
             sendMessage();
         }
     };

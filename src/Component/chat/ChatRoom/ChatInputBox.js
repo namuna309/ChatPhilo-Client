@@ -3,8 +3,6 @@ import '../../../CSS/chat/ChatRoom/ChatInputBox.css'
 
 // Library
 import React from 'react';
-import Input from '@mui/material/Input';
-import InputAdornment from '@mui/material/InputAdornment';
 
 /**
  * ChatInputBox 컴포넌트
