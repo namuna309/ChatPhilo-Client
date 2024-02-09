@@ -5,16 +5,18 @@
 }
 
 .chat-textarea-box {
-    width: 100%;
-    background-color: #00000045;
- 
+    width: 100%; 
     padding: 0.1rem 0 0 0;
 }
 
 .msgInput {
     width: 100%;
     padding: 5px 10px;
-    
+}
+
+.chat-textarea-box input {
+    border-color: rgb(108, 117, 125);
+    border-width: 0.0625rem
 }
 
 .chat-enter {

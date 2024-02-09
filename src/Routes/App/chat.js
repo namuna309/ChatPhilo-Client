@@ -56,7 +56,6 @@ function Chat() {
     useEffect(() => {
         if (chatBoxRef.current) {
             chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
-            console.log(chatBoxRef.current.scrollTop);
         }
     }, [dialog]);
 
@@ -121,7 +120,7 @@ function Chat() {
 
     // 메시지 전송 핸들러 (엔터 키 누를 때)
     const handleMessageSend = (e) => {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' || document.querySelector('.chat-textarea-box').contains(e.target)) {
             sendMessage();
         }
     };
